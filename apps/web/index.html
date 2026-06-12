@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignalForge AI</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="workbench">
+        <aside class="control-panel" aria-label="Strategy controls">
+          <div class="brand-block">
+            <p class="eyebrow">BNB HACK - Track 2 Strategy Skills</p>
+            <h1>SignalForge AI</h1>
+            <p>Quant strategy workbench for CMC signals, BNB catalysts, executable rules, and deterministic backtests.</p>
+          </div>
+          <div class="control-fields">
+            <label>Asset <input id="symbol" value="BNB" /></label>
+            <label>Risk profile
+              <select id="riskProfile">
+                <option value="conservative">Conservative</option>
+                <option value="balanced" selected>Balanced</option>
+                <option value="aggressive">Aggressive</option>
+              </select>
+            </label>
+            <label>Horizon
+              <select id="horizon">
+                <option value="intraday">Intraday</option>
+                <option value="swing" selected>Swing</option>
+                <option value="trend">Trend</option>
+              </select>
+            </label>
+            <label>Lookback days <input id="lookbackDays" type="number" min="7" max="180" value="30" /></label>
+            <button id="generateButton" type="button">Generate Strategy</button>
+          </div>
+          <p id="error" class="error"></p>
+        </aside>
+        <section class="terminal-stage">
+          <section id="results"></section>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
