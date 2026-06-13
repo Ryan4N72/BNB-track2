@@ -6,9 +6,11 @@ Audience: BNB Hack Track 2 judges
 
 Hi judges, this is SignalForge AI.
 
-The problem is that most AI trading demos stop at generic market commentary. They can say "BNB looks bullish", but they do not produce a strategy skill that judges can inspect, backtest, compare, and export.
+Every day, traders face hundreds of indicators, signals, and opinions.
 
-SignalForge AI turns CoinMarketCap market signals into executable, backtestable strategy skills for BNB ecosystem assets.
+The problem is not finding information. The problem is deciding which strategy to trust.
+
+SignalForge AI solves this by transforming CoinMarketCap market signals into transparent, backtestable Strategy Skills for BNB ecosystem assets.
 
 Here is the workflow. First, I select BNB, choose a risk profile, horizon, and lookback window, then click Generate Strategy.
 
